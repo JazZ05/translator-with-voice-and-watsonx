@@ -58,7 +58,7 @@ def text_to_speech(text, voice=""):
     api_url = base_url + '/text-to-speech/api/v1/synthesize?output=output_text.wav'
 
     if voice != "" and voice != "default":
-        api_url = "&voice" + voice
+        api_url = api_url + "&voice=" + voice
 
     # Set the headers for our HTTP request
     headers = {
