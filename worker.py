@@ -54,7 +54,7 @@ def speech_to_text(audio_binary):
 
 def text_to_speech(text, voice=""):
     # Set up Watson Text-to-Speech HTTP Api url
-    base_url = '...'
+    base_url = 'https://sn-watson-stt.labs.skills.network'
     api_url = base_url + '/text-to-speech/api/v1/synthesize?output=output_text.wav'
 
     if voice != "" and voice != "default":
